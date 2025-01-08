@@ -36,16 +36,8 @@ interface TimeLineItemProps {
   children?: ReactNode;
 }
 
-export default function TimeLineItem({ useCustomIcon = false, children }: TimeLineItemProps) {
-  return (
-    <li className="mb-10 ms-8">
-      {/* {useCustomIcon ? null : (
-        <></>
-        // <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-      )} */}
-      {children}
-    </li>
-  );
+export default function TimeLineItem({ children }: TimeLineItemProps) {
+  return <li className="mb-10 ms-8">{children}</li>;
 }
 
 TimeLineItem.Icon = TimeLineIcon;

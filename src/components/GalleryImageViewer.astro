@@ -16,7 +16,7 @@
   const lightboxClose = document.getElementById("lightbox-close") as any;
 
   galleryItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
+    item.addEventListener("click", () => {
       const src = item.getAttribute("data-src");
       const alt = item.getAttribute("data-alt");
 
