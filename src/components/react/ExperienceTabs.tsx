@@ -9,8 +9,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 
 export default function ExperienceTabs() {
   return (
-    <Tabs className="flex flex-col justify-center gap-28 sm:block sm:gap-0" defaultValue="laboral-experience">
-      <TabsList className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-14">
+    <Tabs className="flex flex-col justify-center gap-12 sm:block sm:gap-0" defaultValue="laboral-experience">
+      <TabsList className="flex flex-col justify-center gap-3 md:flex-row md:gap-14">
         <TabsTrigger value="laboral-experience">
           <Building />
           Laboral Experience
@@ -23,12 +23,8 @@ export default function ExperienceTabs() {
           <Certificate />
           Certificates
         </TabsTrigger>
-        {/* <TabsTrigger value="awards">
-          <Award />
-          Awards
-        </TabsTrigger> */}
       </TabsList>
-      <div className="flex h-full w-full justify-center">
+      <div className="flex h-full w-full justify-center px-5 xl:px-0">
         <TabsContent value="laboral-experience">
           <ExperienceTimeLine data={laboralExperience} />
         </TabsContent>
@@ -38,9 +34,6 @@ export default function ExperienceTabs() {
         <TabsContent value="certificates">
           <ExperienceTimeLine data={certificates} />
         </TabsContent>
-        {/* <TabsContent value="awards">
-          <ExperienceTimeLine data={awards} />
-        </TabsContent> */}
       </div>
     </Tabs>
   );

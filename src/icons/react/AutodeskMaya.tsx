@@ -11,9 +11,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0f6067" />
-          <stop offset="0.5" stop-color="#05abac" />
-          <stop offset="1" stop-color="#58bec4" />
+          <stop offset="0" stopColor="#0f6067" />
+          <stop offset="0.5" stopColor="#05abac" />
+          <stop offset="1" stopColor="#58bec4" />
         </linearGradient>
         <linearGradient
           id="b"
@@ -24,9 +24,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#117c83" />
-          <stop offset="0.5" stop-color="#21b5b5" />
-          <stop offset="1" stop-color="#7ed4d4" />
+          <stop offset="0" stopColor="#117c83" />
+          <stop offset="0.5" stopColor="#21b5b5" />
+          <stop offset="1" stopColor="#7ed4d4" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -37,9 +37,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#9accd3" />
-          <stop offset="0.5" stop-color="#72aeb3" />
-          <stop offset="1" stop-color="#317d7f" />
+          <stop offset="0" stopColor="#9accd3" />
+          <stop offset="0.5" stopColor="#72aeb3" />
+          <stop offset="1" stopColor="#317d7f" />
         </linearGradient>
         <linearGradient
           id="d"
@@ -50,9 +50,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#21626e" />
-          <stop offset="0.5" stop-color="#157c84" />
-          <stop offset="1" stop-color="#03a3a5" />
+          <stop offset="0" stopColor="#21626e" />
+          <stop offset="0.5" stopColor="#157c84" />
+          <stop offset="1" stopColor="#03a3a5" />
         </linearGradient>
         <linearGradient
           id="e"
@@ -63,9 +63,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0b7c81" />
-          <stop offset="0.5" stop-color="#068d90" />
-          <stop offset="1" stop-color="#16b1b1" />
+          <stop offset="0" stopColor="#0b7c81" />
+          <stop offset="0.5" stopColor="#068d90" />
+          <stop offset="1" stopColor="#16b1b1" />
         </linearGradient>
         <linearGradient
           id="f"
@@ -76,9 +76,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0a8a8f" />
-          <stop offset="0.5" stop-color="#0f7c82" />
-          <stop offset="1" stop-color="#1a5964" />
+          <stop offset="0" stopColor="#0a8a8f" />
+          <stop offset="0.5" stopColor="#0f7c82" />
+          <stop offset="1" stopColor="#1a5964" />
         </linearGradient>
         <linearGradient
           id="g"
@@ -89,9 +89,9 @@ export default function AutodeskMaya() {
           gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#256a77" />
-          <stop offset="0.5" stop-color="#0d9499" />
-          <stop offset="1" stop-color="#06a0a2" />
+          <stop offset="0" stopColor="#256a77" />
+          <stop offset="0.5" stopColor="#0d9499" />
+          <stop offset="1" stopColor="#06a0a2" />
         </linearGradient>
       </defs>
       <title>file_type_maya</title>

@@ -5,20 +5,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 
 export default function ProjectTabs() {
   return (
-    <Tabs className="flex flex-col justify-center gap-28 sm:block sm:gap-0" defaultValue="laboral-experience">
+    <Tabs
+      className="mt-4 flex flex-col justify-center gap-12 sm:block sm:gap-0 xl:mt-0"
+      defaultValue="laboral-experience"
+    >
       <TabsList className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-14">
-        <TabsTrigger value="laboral-experience">
-          {/* <Building /> */}
-          Designs
-        </TabsTrigger>
-        <TabsTrigger value="education">
-          {/* <Books /> */}
-          Videos
-        </TabsTrigger>
-        <TabsTrigger value="certificates">
-          {/* <Certificate /> */}
-          Animations
-        </TabsTrigger>
+        <TabsTrigger value="laboral-experience">Designs</TabsTrigger>
+        <TabsTrigger value="education">Videos</TabsTrigger>
+        <TabsTrigger value="certificates">Animations</TabsTrigger>
       </TabsList>
       <div className="flex h-full w-full justify-center">
         <TabsContent value="laboral-experience">
@@ -27,7 +21,7 @@ export default function ProjectTabs() {
           </div>
         </TabsContent>
         <TabsContent value="education">
-          <div className="grid w-full animate-fade-left grid-cols-2 gap-10">
+          <div className="grid w-full animate-fade-left gap-10 md:grid-cols-1 xl:grid-cols-2">
             {videos.map((video, index) => (
               <iframe
                 key={index}
@@ -42,7 +36,7 @@ export default function ProjectTabs() {
           </div>
         </TabsContent>
         <TabsContent value="certificates">
-          <div className="grid animate-fade-left grid-cols-2 gap-10">
+          <div className="grid animate-fade-left gap-10 md:grid-cols-1 xl:grid-cols-2">
             {animations.map((animation, index) => (
               <iframe
                 key={index}

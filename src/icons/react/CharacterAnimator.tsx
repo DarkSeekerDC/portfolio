@@ -2,8 +2,8 @@ export default function CharacterAnimator() {
   return (
     <svg
       fill="#fff"
-      width="44"
-      height="44"
+      width="24"
+      height="24"
       id="uuid-0c648152-84be-4b24-9ba1-d16a8d7b9aee"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
