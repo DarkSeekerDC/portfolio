@@ -2,6 +2,7 @@
 import About from "@/components/About.astro";
 import Contact from "@/components/Contact.astro";
 import Experience from "@/components/Experience.astro";
+import GalleryImageViewer from "@/components/GalleryImageViewer.astro";
 import Home from "@/components/Home.astro";
 import Projects from "@/components/Projects.astro";
 import { Separator } from "@/components/react/Separator";
@@ -12,7 +13,7 @@ const description = `Graphic designer and digital animator with more than 4 year
                     learning and adapting to new trends in design and communication..`;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} transition:persist>
   <main class="flex h-full flex-col overflow-y-auto overflow-x-hidden scroll-smooth">
     <Home />
     <Separator className="m-auto my-16 w-[90%]" />
@@ -24,4 +25,5 @@ const description = `Graphic designer and digital animator with more than 4 year
     <Separator className="m-auto my-16 w-[90%]" />
     <Contact />
   </main>
+  <GalleryImageViewer />
 </Layout>

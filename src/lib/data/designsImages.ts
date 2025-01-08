@@ -1,104 +1,144 @@
-import ahorro1 from "@/assets/images/designs/Ahorro 1.1.webp";
-import ahorro12 from "@/assets/images/designs/Ahorro 1.2.webp";
-import ahorro13 from "@/assets/images/designs/Ahorro 1.3.webp";
-import ahorroEnergiaRefrigeradora from "@/assets/images/designs/Ahorro energia refrigeradora.webp";
-import ambatoEnAccion from "@/assets/images/designs/Ambato en Accion.webp";
-import bandaSinfonica from "@/assets/images/designs/Banda sinfonica.webp";
-import botieChatbot100 from "@/assets/images/designs/Botie chatbot-100.webp";
-import cantonizacionMocha from "@/assets/images/designs/Cantonizacion Mocha.webp";
-import capaDeOzono10 from "@/assets/images/designs/Capa de ozono 1.0.webp";
-import capaDeOzono11 from "@/assets/images/designs/Capa de ozono 1.1.webp";
-import comunicadoEEASA from "@/assets/images/designs/Comunicado EEASA.webp";
-import consultaTuCronograma from "@/assets/images/designs/Consulta tu cronograma.webp";
-import diaDeLaMadre from "@/assets/images/designs/Dia de la madre.webp";
-import diaDelPadre from "@/assets/images/designs/Dia del padre.webp";
-import eficienciaEnergetica from "@/assets/images/designs/Eficiencia energetica.webp";
-import especiesEnPeligro10 from "@/assets/images/designs/Especies en peligro 1.0.webp";
-import especiesEnPeligro11 from "@/assets/images/designs/Especies en peligro 1.1.webp";
-import gaceta from "@/assets/images/designs/Gaceta.webp";
-import invitacionGobierno from "@/assets/images/designs/Invitacion gobierno.webp";
-import reforestacion from "@/assets/images/designs/Reforestacion.webp";
+import ahorro1 from "@/../public/images/designs/Ahorro 1.1.webp";
+import ahorro12 from "@/../public/images/designs/Ahorro 1.2.webp";
+import ahorro13 from "@/../public/images/designs/Ahorro 1.3.webp";
+import ahorroEnergiaRefrigeradora from "@/../public/images/designs/Ahorro energia refrigeradora.webp";
+import ambatoEnAccion from "@/../public/images/designs/Ambato en Accion.webp";
+import bandaSinfonica from "@/../public/images/designs/Banda sinfonica.webp";
+import botieChatbot100 from "@/../public/images/designs/Botie chatbot-100.webp";
+import cantonizacionMocha from "@/../public/images/designs/Cantonizacion Mocha.webp";
+import capaDeOzono10 from "@/../public/images/designs/Capa de ozono 1.0.webp";
+import capaDeOzono11 from "@/../public/images/designs/Capa de ozono 1.1.webp";
+import comunicadoEEASA from "@/../public/images/designs/Comunicado EEASA.webp";
+import consultaTuCronograma from "@/../public/images/designs/Consulta tu cronograma.webp";
+import diaDeLaMadre from "@/../public/images/designs/Dia de la madre.webp";
+import diaDelPadre from "@/../public/images/designs/Dia del padre.webp";
+import eficienciaEnergetica from "@/../public/images/designs/Eficiencia energetica.webp";
+import especiesEnPeligro10 from "@/../public/images/designs/Especies en peligro 1.0.webp";
+import especiesEnPeligro11 from "@/../public/images/designs/Especies en peligro 1.1.webp";
+import gaceta from "@/../public/images/designs/Gaceta.webp";
+import invitacionGobierno from "@/../public/images/designs/Invitacion gobierno.webp";
+import reforestacion from "@/../public/images/designs/Reforestacion.webp";
 import type { ProjectImage } from "@/types/projectImages.type";
 
 export const designsImages: ProjectImage[] = [
   {
-    src: ahorro1,
+    id: 1,
+    image: ahorro1,
+    src: "/images/designs/Ahorro 1.1.webp",
     alt: "Ahorro 1"
   },
   {
-    src: botieChatbot100,
+    id: 2,
+    image: botieChatbot100,
+    src: "/images/designs/Botie chatbot-100.webp",
     alt: "Botie chatbot-100"
   },
   {
-    src: ambatoEnAccion,
+    id: 3,
+    image: ambatoEnAccion,
+    src: "/images/designs/Ambato en Accion.webp",
     alt: "Ambato en Accion"
   },
   {
-    src: bandaSinfonica,
+    id: 4,
+    image: bandaSinfonica,
+    src: "/images/designs/Banda sinfonica.webp",
     alt: "Banda sinfonica"
   },
   {
-    src: ahorroEnergiaRefrigeradora,
+    id: 5,
+    image: ahorroEnergiaRefrigeradora,
+    src: "/images/designs/Ahorro energia refrigeradora.webp",
     alt: "Ahorro energia refrigeradora"
   },
   {
-    src: ahorro13,
+    id: 6,
+    image: ahorro13,
+    src: "/images/designs/Ahorro 1.3.webp",
     alt: "Ahorro 1.3"
   },
   {
-    src: capaDeOzono10,
+    id: 7,
+    image: capaDeOzono10,
+    src: "/images/designs/Capa de ozono 1.0.webp",
     alt: "Capa de ozono 1.0"
   },
   {
-    src: cantonizacionMocha,
+    id: 8,
+    image: cantonizacionMocha,
+    src: "/images/designs/Cantonizacion Mocha.webp",
     alt: "Cantonizacion Mocha"
   },
   {
-    src: comunicadoEEASA,
+    id: 9,
+    image: comunicadoEEASA,
+    src: "/images/designs/Comunicado EEASA.webp",
     alt: "Comunicado EEASA"
   },
   {
-    src: ahorro12,
+    id: 10,
+    image: ahorro12,
+    src: "/images/designs/Ahorro 1.2.webp",
     alt: "Ahorro 1.2"
   },
   {
-    src: capaDeOzono11,
+    id: 11,
+    image: capaDeOzono11,
+    src: "/images/designs/Capa de ozono 1.1.webp",
     alt: "Capa de ozono 1.1"
   },
   {
-    src: consultaTuCronograma,
+    id: 12,
+    image: consultaTuCronograma,
+    src: "/images/designs/Consulta tu cronograma.webp",
     alt: "Consulta tu cronograma"
   },
   {
-    src: diaDeLaMadre,
+    id: 13,
+    image: diaDeLaMadre,
+    src: "/images/designs/Dia de la madre.webp",
     alt: "Dia de la madre"
   },
   {
-    src: diaDelPadre,
+    id: 14,
+    image: diaDelPadre,
+    src: "/images/designs/Dia del padre.webp",
     alt: "Dia del padre"
   },
   {
-    src: eficienciaEnergetica,
+    id: 15,
+    image: eficienciaEnergetica,
+    src: "/images/designs/Eficiencia energetica.webp",
     alt: "Eficiencia energetica"
   },
   {
-    src: especiesEnPeligro10,
+    id: 16,
+    image: especiesEnPeligro10,
+    src: "/images/designs/Especies en peligro 1.0.webp",
     alt: "Especies en peligro 1.0"
   },
   {
-    src: gaceta,
+    id: 17,
+    image: gaceta,
+    src: "/images/designs/Gaceta.webp",
     alt: "Gaceta"
   },
   {
-    src: invitacionGobierno,
+    id: 18,
+    image: invitacionGobierno,
+    src: "/images/designs/Invitacion gobierno.webp",
     alt: "Invitacion gobierno"
   },
   {
-    src: reforestacion,
+    id: 19,
+    image: reforestacion,
+    src: "/images/designs/Reforestacion.webp",
     alt: "Reforestacion"
   },
   {
-    src: especiesEnPeligro11,
+    id: 20,
+    image: especiesEnPeligro11,
+    src: "/images/designs/Especies en peligro 1.1.webp",
     alt: "Especies en peligro 1.1"
   }
 ];

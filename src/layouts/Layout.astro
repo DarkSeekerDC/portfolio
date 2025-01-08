@@ -1,5 +1,6 @@
 ---
 import Header from "@/components/Header.astro";
+import { ClientRouter } from "astro:transitions";
 interface Props {
   title: string;
   description: string;
@@ -17,6 +18,7 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ClientRouter fallback="none" />
   </head>
   <body class="relative w-full overflow-x-clip text-black">
     <div
@@ -26,87 +28,87 @@ const { title, description } = Astro.props;
     <Header />
     <slot />
   </body>
-  <style is:global>
-    html {
-      scroll-behavior: smooth;
-      color-scheme: dark light;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Thin.woff2") format("woff2");
-      font-weight: 100;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-ExtraLight.woff2") format("woff2");
-      font-weight: 200;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Light.woff2") format("woff2");
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Medium.woff2") format("woff2");
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-ExtraBold.woff2") format("woff2");
-      font-weight: 800;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("/fonts/Poppins-Black.woff2") format("woff2");
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
 </html>
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark light;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>

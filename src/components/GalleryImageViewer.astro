@@ -1,0 +1,44 @@
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70">
+  <div
+    class="mas relative top-[10%] md:left-[10%] md:max-h-[80vh] md:max-w-[80vw] xl:left-[35%] xl:max-h-[30vh] xl:max-w-[30vw]"
+  >
+    <button id="lightbox-close" class="absolute right-2 top-2 rounded-full bg-black p-2 text-white">
+      ✕
+    </button>
+    <img id="lightbox-image" class="rounded-lg" src="" alt="" />
+  </div>
+</div>
+
+<script>
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  const lightbox = document.getElementById("lightbox") as any;
+  const lightboxImage = document.getElementById("lightbox-image") as any;
+  const lightboxClose = document.getElementById("lightbox-close") as any;
+
+  galleryItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const src = item.getAttribute("data-src");
+      const alt = item.getAttribute("data-alt");
+
+      lightboxImage.src = src;
+      lightboxImage.alt = alt;
+      lightbox.classList.remove("hidden");
+    });
+  });
+
+  lightboxClose.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+  });
+
+  lightbox.addEventListener("click", (e: any) => {
+    if (e.target === lightbox) {
+      lightbox.classList.add("hidden");
+    }
+  });
+</script>
+
+<style>
+  #lightbox.hidden {
+    display: none;
+  }
+</style>
