@@ -4,11 +4,10 @@ import SectionContainer from "./SectionContainer.astro";
 ---
 
 <SectionContainer id="projects">
-  <div class="relative flex flex-col overflow-hidden">
+  <div class="flex w-full flex-col">
     <h2 class="text-center text-2xl font-semibold sm:ml-32 sm:text-left">Projects</h2>
-    <div class="relative flex w-full items-center">
-      <div class="w-full overflow-hidden py-8 sm:p-8">
-        <!-- <ProjectsShowcase client:only /> -->
+    <div class="flex w-full items-center">
+      <div class="w-full py-8 sm:p-8">
         <ProjectTabs client:visible />
       </div>
     </div>
