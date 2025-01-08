@@ -2,22 +2,23 @@
 import type { ProjectImage } from "@/types/projectImages.type";
 
 interface Props {
-  images: ProjectImage[][];
+  images: ProjectImage[];
 }
 
 const { images } = Astro.props;
 ---
 
-<div class="grid grid-cols-2 gap-4 md:grid-cols-5">
+<div class="container px-5 md:columns-3 xl:columns-5 xl:px-0">
   {
-    images.map((chunk, index) => (
-      <div class="grid gap-4">
-        {chunk.map((image, index) => (
-          <div>
-            <img class="max -w-full h-auto rounded-lg" src={image.src} alt={image.alt} />
-          </div>
-        ))}
-      </div>
+    images.map((image, index) => (
+      <a href={`/details?image=${image.src}}&`}>
+        <img
+          class="mb-5 h-auto w-full rounded-lg"
+          src={image.src}
+          alt={image.alt}
+          transition:name={image.src}
+        />
+      </a>
     ))
   }
 </div>
