@@ -1,0 +1,102 @@
+---
+import { animations, videos } from "@/lib/data/projectsVideos";
+import Gallery from "./Gallery.astro";
+import { designsImages } from "@/lib/data/designsImages";
+---
+
+<div class="mb-5 flex justify-center border-b border-gray-200 text-center text-sm font-medium text-gray-500">
+  <ul class="-mb-px flex flex-wrap">
+    <li class="me-2">
+      <a
+        id="designs"
+        class="active inline-block cursor-pointer rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+        >Designs</a
+      >
+    </li>
+    <li class="me-2">
+      <a
+        id="videos"
+        class="inline-block cursor-pointer rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+        >Videos</a
+      >
+    </li>
+    <li class="me-2">
+      <a
+        id="animations"
+        class="inline-block cursor-pointer rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+        >Animations</a
+      >
+    </li>
+  </ul>
+</div>
+<div id="design-content">
+  <Gallery images={designsImages} />
+</div>
+<div id="video-content" class="hidden w-full animate-fade-left gap-10 md:grid-cols-1 xl:grid-cols-2">
+  {
+    videos.map((video, index) => (
+      <iframe
+        width={560}
+        height={315}
+        src={video}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      />
+    ))
+  }
+</div>
+<div id="animation-content" class="hidden animate-fade-left gap-10 md:grid-cols-1 xl:grid-cols-2">
+  {
+    animations.map((animation) => (
+      <iframe
+        width={560}
+        height={315}
+        src={animation}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      />
+    ))
+  }
+</div>
+
+<style>
+  .active {
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+</style>
+
+<script>
+  document.getElementById("designs")?.addEventListener("click", () => {
+    //Tabs
+    document.getElementById("videos")?.classList.remove("active");
+    document.getElementById("animations")?.classList.remove("active");
+    document.getElementById("designs")?.classList.add("active");
+    //Content
+    document.getElementById("video-content")?.classList.add("hidden");
+    document.getElementById("animation-content")?.classList.add("hidden");
+    document.getElementById("design-content")?.classList.remove("hidden");
+  });
+  document.getElementById("videos")?.addEventListener("click", () => {
+    //Tabs
+    document.getElementById("designs")?.classList.remove("active");
+    document.getElementById("animations")?.classList.remove("active");
+    document.getElementById("videos")?.classList.add("active");
+    //Content
+    document.getElementById("design-content")?.classList.add("hidden");
+    document.getElementById("animation-content")?.classList.add("hidden");
+    document.getElementById("video-content")?.classList.remove("hidden");
+    document.getElementById("video-content")?.classList.add("grid");
+  });
+  document.getElementById("animations")?.addEventListener("click", () => {
+    //Tabs
+    document.getElementById("designs")?.classList.remove("active");
+    document.getElementById("videos")?.classList.remove("active");
+    document.getElementById("animations")?.classList.add("active");
+    //Content
+    document.getElementById("design-content")?.classList.add("hidden");
+    document.getElementById("video-content")?.classList.add("hidden");
+    document.getElementById("animation-content")?.classList.remove("hidden");
+    document.getElementById("animation-content")?.classList.add("grid");
+  });
+</script>

@@ -1,4 +1,4 @@
 export type ProjectImage = {
-  src: string;
+  src: ImageMetadata;
   alt: string;
 };

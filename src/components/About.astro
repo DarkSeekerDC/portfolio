@@ -1,4 +1,9 @@
 ---
+import Steam from "@/icons/Steam.astro";
+import { Image } from "astro:assets";
+import equipo from "../assets/images/equipo.webp";
+import diseno from "../assets/images/Imagen diseño-100.webp";
+import videojuegos from "../assets/images/Videojuegos-100.webp";
 import SectionContainer from "./SectionContainer.astro";
 ---
 
@@ -11,60 +16,19 @@ import SectionContainer from "./SectionContainer.astro";
         I am Diego Cobo, a 24-year-old passionate about design, editing, and animation. I fully dedicate my free
         time to exploring and honing these skills while playing videogames and discovering new songs
       </p>
-      <!-- <div class="flex h-full flex-col gap-3 sm:grid sm:grid-cols-4 sm:grid-rows-2 sm:gap-4">
-        <div
-          class="tuapp col-span-1 row-span-2 h-48 w-full rounded-lg border border-slate-600 shadow-xl shadow-slate-800/50 sm:h-auto"
+      <div class="container columns-2 px-56">
+        <Image class="mb-5 h-auto w-full rounded-lg" src={equipo} alt="" />
+        <a
+          href="https://steamcommunity.com/profiles/76561198138228193/"
+          target="_blank"
+          aria-label="steam profile"
+          class="mb-5 flex size-full cursor-pointer items-center justify-center rounded-md border border-black border-transparent bg-[#1b2838]"
         >
-        </div>
-        <div
-          class="col-span-1 rounded-lg border border-slate-600 bg-black/50 py-6 shadow-xl shadow-slate-800/50 sm:py-0"
-        >
-          <a
-            href="https://twitter.com/JoseP0399"
-            target="_blank"
-            aria-label="X social media"
-            class="flex size-full cursor-pointer items-center justify-center"
-          >
-            <X />
-          </a>
-        </div>
-        <div
-          class="col-span-1 rounded-lg border border-slate-600 bg-[#1b2838]/50 shadow-xl shadow-slate-800/50"
-        >
-          <a
-            href="https://steamcommunity.com/id/bluebird0399/"
-            target="_blank"
-            aria-label="steam profile"
-            class="flex size-full cursor-pointer items-center justify-center"
-          >
-            <Steam />
-          </a>
-        </div>
-        <div
-          class="code col-span-1 row-span-2 h-48 rounded-lg border border-slate-600 shadow-xl shadow-slate-800/50 sm:h-auto"
-        >
-        </div>
-        <div
-          class="steam col-span-2 h-48 w-full rounded-lg border border-slate-600 shadow-xl shadow-slate-800/50 sm:h-auto"
-        >
-        </div>
-      </div> -->
+          <Steam />
+        </a>
+        <Image class="mb-5 h-auto w-full rounded-lg" src={videojuegos} alt="" />
+        <Image class="mb-5 h-auto w-full rounded-lg" src={diseno} alt="" />
+      </div>
     </div>
   </div>
 </SectionContainer>
-
-<style>
-  .tuapp {
-    background-image: url("/images/tuapp-competition.webp");
-    background-size: cover;
-    background-position: 70%;
-  }
-  .code {
-    background-image: url("/images/code.webp");
-    background-position: center;
-  }
-  .steam {
-    background-image: url("/images/steam.webp");
-    background-size: 100% 100%;
-  }
-</style>

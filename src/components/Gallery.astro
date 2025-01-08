@@ -1,24 +1,20 @@
 ---
+import { cn } from "@/lib/utils";
 import type { ProjectImage } from "@/types/projectImages.type";
+import { Image } from "astro:assets";
 
 interface Props {
   images: ProjectImage[];
+  class?: string;
 }
 
-const { images } = Astro.props;
+const { images, class: className } = Astro.props;
 ---
 
-<div class="container px-5 md:columns-3 xl:columns-5 xl:px-0">
+<div class={cn("container px-5 md:columns-3 xl:columns-5 xl:px-0", className)}>
   {
     images.map((image, index) => (
-      <a href={`/details?image=${image.src}}&`}>
-        <img
-          class="mb-5 h-auto w-full rounded-lg"
-          src={image.src}
-          alt={image.alt}
-          transition:name={image.src}
-        />
-      </a>
+      <Image class="mb-5 h-auto w-full rounded-lg" src={image.src} alt={image.alt} />
     ))
   }
 </div>

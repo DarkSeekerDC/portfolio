@@ -1,7 +1,9 @@
 ---
+import avatar from "@/assets/images/avatar.webp";
 import CV from "@/icons/react/CV";
 import Linkedin from "@/icons/react/Linkedin.tsx";
 import Mail from "@/icons/react/Mail.tsx";
+import { Image } from "astro:assets";
 import SectionContainer from "./SectionContainer.astro";
 import Badge from "./react/Badge";
 import BadgeLink from "./react/BadgeLink";
@@ -38,7 +40,7 @@ const badges = [
   <div class="flex flex-col items-center gap-4 sm:max-w-3xl sm:items-baseline">
     <section class="m-auto flex flex-col items-center gap-8 sm:flex-row">
       <div class="relative m-auto h-32 w-32 overflow-hidden rounded-full">
-        <img class="absolute" src="/images/avatar.webp" width="100%" height="100%" alt="Avatar iamge" />
+        <Image class="absolute" src={avatar} alt="Avatar image" />
       </div>
       <div class="flex flex-col gap-2 sm:gap-0">
         <h1 class="text-center text-4xl font-black sm:text-6xl">Diego Cobo</h1>

@@ -1,88 +1,104 @@
+import ahorro1 from "@/assets/images/designs/Ahorro 1.1.webp";
+import ahorro12 from "@/assets/images/designs/Ahorro 1.2.webp";
+import ahorro13 from "@/assets/images/designs/Ahorro 1.3.webp";
+import ahorroEnergiaRefrigeradora from "@/assets/images/designs/Ahorro energia refrigeradora.webp";
+import ambatoEnAccion from "@/assets/images/designs/Ambato en Accion.webp";
+import bandaSinfonica from "@/assets/images/designs/Banda sinfonica.webp";
+import botieChatbot100 from "@/assets/images/designs/Botie chatbot-100.webp";
+import cantonizacionMocha from "@/assets/images/designs/Cantonizacion Mocha.webp";
+import capaDeOzono10 from "@/assets/images/designs/Capa de ozono 1.0.webp";
+import capaDeOzono11 from "@/assets/images/designs/Capa de ozono 1.1.webp";
+import comunicadoEEASA from "@/assets/images/designs/Comunicado EEASA.webp";
+import consultaTuCronograma from "@/assets/images/designs/Consulta tu cronograma.webp";
+import diaDeLaMadre from "@/assets/images/designs/Dia de la madre.webp";
+import diaDelPadre from "@/assets/images/designs/Dia del padre.webp";
+import eficienciaEnergetica from "@/assets/images/designs/Eficiencia energetica.webp";
+import especiesEnPeligro10 from "@/assets/images/designs/Especies en peligro 1.0.webp";
+import especiesEnPeligro11 from "@/assets/images/designs/Especies en peligro 1.1.webp";
+import gaceta from "@/assets/images/designs/Gaceta.webp";
+import invitacionGobierno from "@/assets/images/designs/Invitacion gobierno.webp";
+import reforestacion from "@/assets/images/designs/Reforestacion.webp";
 import type { ProjectImage } from "@/types/projectImages.type";
 
 export const designsImages: ProjectImage[] = [
   {
-    src: "/images/designs/Ahorro%201.webp",
+    src: ahorro1,
     alt: "Ahorro 1"
   },
   {
-    src: "/images/designs/Botie chatbot-100.webp",
+    src: botieChatbot100,
     alt: "Botie chatbot-100"
   },
   {
-    src: "/images/designs/Ambato%20en%20Accion.webp",
+    src: ambatoEnAccion,
     alt: "Ambato en Accion"
   },
   {
-    src: "/images/designs/Banda%20sinfonica.webp",
+    src: bandaSinfonica,
     alt: "Banda sinfonica"
   },
   {
-    src: "/images/designs/Ahorro%20energia%20refrigeradora.webp",
+    src: ahorroEnergiaRefrigeradora,
     alt: "Ahorro energia refrigeradora"
   },
   {
-    src: "/images/designs/Ahorro%201.3.webp",
+    src: ahorro13,
     alt: "Ahorro 1.3"
   },
   {
-    src: "/images/designs/Capa%20de%20ozono%201.0.webp",
+    src: capaDeOzono10,
     alt: "Capa de ozono 1.0"
   },
   {
-    src: "/images/designs/Cantonizacion%20Mocha.webp",
+    src: cantonizacionMocha,
     alt: "Cantonizacion Mocha"
   },
   {
-    src: "/images/designs/Comunicado EEASA.webp",
+    src: comunicadoEEASA,
     alt: "Comunicado EEASA"
   },
   {
-    src: "/images/designs/Ahorro%201.2.webp",
+    src: ahorro12,
     alt: "Ahorro 1.2"
   },
   {
-    src: "/images/designs/Capa%20de%20ozono%201.1.webp",
+    src: capaDeOzono11,
     alt: "Capa de ozono 1.1"
   },
   {
-    src: "/images/designs/Consulta%20tu%20cronograma.webp",
+    src: consultaTuCronograma,
     alt: "Consulta tu cronograma"
   },
   {
-    src: "/images/designs/Dia%20de%20la%20madre.webp",
+    src: diaDeLaMadre,
     alt: "Dia de la madre"
   },
   {
-    src: "/images/designs/Ahorro%201.1.webp",
-    alt: "Ahorro 1.1"
-  },
-  {
-    src: "/images/designs/Dia%20del%20padre.webp",
+    src: diaDelPadre,
     alt: "Dia del padre"
   },
   {
-    src: "/images/designs/Eficiencia energetica.webp",
+    src: eficienciaEnergetica,
     alt: "Eficiencia energetica"
   },
   {
-    src: "/images/designs/Especies en peligro 1.0.webp",
+    src: especiesEnPeligro10,
     alt: "Especies en peligro 1.0"
   },
   {
-    src: "/images/designs/Gaceta.webp",
+    src: gaceta,
     alt: "Gaceta"
   },
   {
-    src: "/images/designs/Invitacion gobierno.webp",
+    src: invitacionGobierno,
     alt: "Invitacion gobierno"
   },
   {
-    src: "/images/designs/Reforestacion.webp",
+    src: reforestacion,
     alt: "Reforestacion"
   },
   {
-    src: "/images/designs/Especies en peligro 1.1.webp",
+    src: especiesEnPeligro11,
     alt: "Especies en peligro 1.1"
   }
 ];

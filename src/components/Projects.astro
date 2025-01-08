@@ -1,5 +1,5 @@
 ---
-import ProjectTabs from "./react/ProjectsTabs";
+import ProjectsTabs from "./ProjectsTabs.astro";
 import SectionContainer from "./SectionContainer.astro";
 ---
 
@@ -8,7 +8,8 @@ import SectionContainer from "./SectionContainer.astro";
     <h2 class="text-center text-2xl font-semibold sm:ml-32 sm:text-left">Projects</h2>
     <div class="flex w-full items-center">
       <div class="w-full py-8 sm:p-8">
-        <ProjectTabs client:visible />
+        <!-- <ProjectTabs client:visible /> -->
+        <ProjectsTabs />
       </div>
     </div>
   </div>
