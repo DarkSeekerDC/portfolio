@@ -14,7 +14,7 @@ const { images, class: className } = Astro.props;
 <div class={cn("container px-5 md:columns-3 xl:columns-5 xl:px-0", className)}>
   {
     images.map((image) => (
-      <a class="gallery-item" data-src={image.src} data-alt={image.alt}>
+      <a class="gallery-item cursor-pointer" data-src={image.src} data-alt={image.alt}>
         <Image class="mb-5 h-auto w-full rounded-lg" src={image.image} alt={image.alt} />
       </a>
     ))
