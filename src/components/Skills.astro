@@ -12,11 +12,11 @@ import Badge from "./react/Badge";
     </div>
   </header>
   <div
-    class="grid auto-cols-max grid-flow-col grid-cols-3 grid-rows-8 gap-x-3 gap-y-4 sm:grid-cols-6 sm:grid-rows-2"
+    class="grid auto-cols-max grid-flow-col grid-cols-2 grid-rows-8 gap-x-3 gap-y-4 md:grid-cols-4 md:grid-rows-4 xl:grid-cols-8 xl:grid-rows-2"
   >
     {
       skills.map((skill) => (
-        <Badge className={`${colors[skill.level]} dark:${colors[skill.level]} h-10`}>
+        <Badge className={`${colors[skill.level]} dark:${colors[skill.level]}`}>
           <skill.icon />
           {skill.name}
         </Badge>
