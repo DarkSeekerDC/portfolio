@@ -101,49 +101,49 @@ export const designsImages: ProjectImage[] = [
     alt: "Dia de la madre"
   },
   {
-    id: 21,
+    id: 14,
     image: ahorro11,
     src: "/images/designs/Ahorro 1.1.webp",
     alt: "Ahorro 1.1"
   },
   {
-    id: 14,
+    id: 15,
     image: diaDelPadre,
     src: "/images/designs/Dia del padre.webp",
     alt: "Dia del padre"
   },
   {
-    id: 15,
+    id: 16,
     image: eficienciaEnergetica,
     src: "/images/designs/Eficiencia energetica.webp",
     alt: "Eficiencia energetica"
   },
   {
-    id: 16,
+    id: 17,
     image: especiesEnPeligro10,
     src: "/images/designs/Especies en peligro 1.0.webp",
     alt: "Especies en peligro 1.0"
   },
   {
-    id: 17,
+    id: 18,
     image: gaceta,
     src: "/images/designs/Gaceta.webp",
     alt: "Gaceta"
   },
   {
-    id: 18,
+    id: 19,
     image: invitacionGobierno,
     src: "/images/designs/Invitacion gobierno.webp",
     alt: "Invitacion gobierno"
   },
   {
-    id: 19,
+    id: 20,
     image: reforestacion,
     src: "/images/designs/Reforestacion.webp",
     alt: "Reforestacion"
   },
   {
-    id: 20,
+    id: 21,
     image: especiesEnPeligro11,
     src: "/images/designs/Especies en peligro 1.1.webp",
     alt: "Especies en peligro 1.1"
