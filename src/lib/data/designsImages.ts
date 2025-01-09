@@ -1,6 +1,7 @@
-import ahorro1 from "@/../public/images/designs/Ahorro 1.1.webp";
+import ahorro11 from "@/../public/images/designs/Ahorro 1.1.webp";
 import ahorro12 from "@/../public/images/designs/Ahorro 1.2.webp";
 import ahorro13 from "@/../public/images/designs/Ahorro 1.3.webp";
+import ahorro1 from "@/../public/images/designs/Ahorro 1.webp";
 import ahorroEnergiaRefrigeradora from "@/../public/images/designs/Ahorro energia refrigeradora.webp";
 import ambatoEnAccion from "@/../public/images/designs/Ambato en Accion.webp";
 import bandaSinfonica from "@/../public/images/designs/Banda sinfonica.webp";
@@ -24,7 +25,7 @@ export const designsImages: ProjectImage[] = [
   {
     id: 1,
     image: ahorro1,
-    src: "/images/designs/Ahorro 1.1.webp",
+    src: "/images/designs/Ahorro 1.webp",
     alt: "Ahorro 1"
   },
   {
@@ -98,6 +99,12 @@ export const designsImages: ProjectImage[] = [
     image: diaDeLaMadre,
     src: "/images/designs/Dia de la madre.webp",
     alt: "Dia de la madre"
+  },
+  {
+    id: 21,
+    image: ahorro11,
+    src: "/images/designs/Ahorro 1.1.webp",
+    alt: "Ahorro 1.1"
   },
   {
     id: 14,
