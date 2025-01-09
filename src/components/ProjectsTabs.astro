@@ -36,6 +36,7 @@ import { designsImages } from "@/lib/data/designsImages";
   {
     videos.map((video) => (
       <iframe
+        loading="lazy"
         width={560}
         height={315}
         src={video}
@@ -49,6 +50,7 @@ import { designsImages } from "@/lib/data/designsImages";
   {
     animations.map((animation) => (
       <iframe
+        loading="lazy"
         width={560}
         height={315}
         src={animation}
